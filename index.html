@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="#" methode="post">
+      <h1>Inscription au club sportif</h1>
+      <fieldset>
+        <legend>Information personnelles</legend>
+        <div class="row">
+          <div>
+            <label for="nom">nom *</label>
+            <input type="text" id="nom" name="nom" placeholder="Ex : Dupont" />
+          </div>
+          <div>
+            <label for="prenom">prenom *</label>
+            <input
+              type="text"
+              id="prenom"
+              name="nom"
+              placeholder="Ex : Dupont"
+            />
+          </div>
+        </div>
+        <label for="email">email*</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Ex : marie@email.com"
+        />
+        <label for="tel">telephone *</label>
+        <input
+          type="tel"
+          id="tel"
+          name="tel"
+          placeholder="Ex : 06 12 34 56 78"
+        />
+        <label for="mdp">mot de passe*</label>
+        <input type="password" id="mdp" name="mdp" />
+      </fieldset>
+      <fieldset>
+        <div class="row">
+          <div>
+            <label for="naissance">Date de naissance</label>
+            <input type="date" id="naissance" name="naissance" />
+          </div>
+          <div>
+            <label for="tel">experience *</label>
+            <input
+              type="number"
+              id="experience"
+              name="experience"
+              min="0"
+              max="50"
+            />
+          </div>
+        </div>
+        <legend>votre profil sportif</legend>
+        <label for="sport">sport pratique *</label>
+        <select id="sport" name="sport">
+          <optgroup label="sports collectifs">
+            <option value="football">Football</option>
+            <option value="basketball">Basketball</option>
+          </optgroup>
+          <optgroup label="sport individuels">
+            <option value="natation">Natation</option>
+            <option value="yoga">Yoga</option>
+          </optgroup>
+        </select>
+        <label for="ville">votre ville</label>
+        <input type="text" id="ville" name="ville" liste="villes" />
+        <datalist id="villes">
+          <option value="Paris"></option>
+          <option value="lyon"></option>
+          <option value="Marseille"></option>
+        </datalist>
+
+        <label> Niveau *</label>
+        <input type="radio" name="niveau" value="debutant" id="n1" />
+        <label for="n1"> debutant *</label>
+        <input type="radio" name="niveau" value="Intermediaire" id="n2" />
+        <label for="n2">Intermediaire*</label>
+        <input type="radio" name="niveau" value="confirme" id="n3" />
+        <label for="n3">confirme</label>
+        <label>creneaux souhaites</label>
+        <input type="checkbox" name="creneau" value="matin" id="c1" />
+        <label>Matin</label>
+        <input type="checkbox" name="creneau" value="apres midi" id="c2" />
+        <label>apres midi</label>
+        <input type="checkbox" name="creneau" value="soir" id="c3" />
+        <label>soir</label>
+        <input type="checkbox" name="creneau" value="week-end" id="c3" />
+        <label for="c3">week-end</label>
+        <label for="bio">Presentez-vous (200 caracteres max)</label>
+        <textarea
+          id="bio"
+          name="bio"
+          rows="4"
+          maxlength="200"
+          placeholder="Parlez-nous de vous..."
+        ></textarea>
+      </fieldset>
+      <fieldset>
+        <legend>vvalidation</legend>
+      </fieldset>
+    </form>
+  </body>
+</html>
